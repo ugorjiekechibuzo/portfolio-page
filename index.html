@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b55c1fdbd8.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!----------header page -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="" alt="logo" class="logo">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, I'm <span>Eke Ugorji</span> a<br> developer based in Germany</h1>
+        </div>
+      </div>
+    </div>
+
+    <!----------about page -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/background.jpg" alt="user">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I recently graduated from the Le Wagon Web Development bootcamp, where I enrolled to elevate my skill set, bridging the gap from digital sales to becoming a Junior Full-Stack Developer. My journey into tech is fueled by a fervent ambition to merge client-centric thinking with cutting-edge technology.
+
+              The immersive experience at Le Wagon not only equipped me with technical prowess in HTML, CSS, and Javascript on the Ruby on Rails framework but also instilled a passion for creating solutions that seamlessly blend user satisfaction and technological innovation.<br>Additionally, I have a solid foundation in effective communication and teamwork, honed during my 8-year tenure at Leadway Assurance Company Limited, where I received several awards for my contributions.
+
+              I am actively seeking a new role that leverages my diverse background in both the digital industry and web development. I am committed to personal development and staying updated on new technologies, ensuring that my skill set remains at the forefront of industry standards.<br>
+
+              My ambition is to contribute my unique perspective gained from digital sales to the dynamic world of technology. I'm excited to bring fresh ideas, foster creativity, and work collaboratively within a team to tackle challenges head-on. Let's embark on this tech adventure together!</p>
+            <div class="tab-titles">
+            <p class="tab-links active-link"  onclick="openTab('skills')">Skills</p>
+            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+            <p class="tab-links"   onclick="openTab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab"  id="skills">
+              <ul >
+                <li>HTML</li>
+                <li>CSS & SCSS</li>
+                <li>JavaScript</li>
+                <li>Ruby on Rails</li>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul >
+                <li><span>2023</span><br>Web developer at Yiaga</r></li>
+                <li><span>2017</span><br>Digital Specialist at Leadway</r></li>
+                <li><span>2015</span><br>Web developer at Yiaga</r></li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul >
+                <li><span>2023</span><br>Web development at Le Wagon</r></li>
+                <li><span>2015</span><br>Microbiology at Abia State University</r></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------services page -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>I'm a skilled web designer, dedicated to crafting visually appealing and user-friendly websites. From concept to execution, I specialize in creating engaging online experiences. Let's bring your vision to life! </p>
+           <!----- <a href="">Learn More</a> --->
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-----------------portfolio page -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div id="work-list">
+          <div id="work">
+            <img src="images/work1.png" alt="">
+            <div class="layer">
+              <h3>Work 1</h3>
+              <p>This is a web application design to allow people rent items.<br> It is design on a Ruby on Rails framework using HTML, CSS and Javascript</p>
+              <a href="https://www.simplerent.store/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div id="work">
+            <img src="images/work-2.png" alt="">
+            <div class="layer">
+              <h3>Work 1</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+              <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-----------------contact page -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>ugorjiekechibuzo@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+49 17662715798</p>
+            <div class="social-icons">
+              <a href="https://github.com/ugorjiekechibuzo"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/ugorji-eke"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/my-resume.pdf" download class="btn btn-2">Download Cv</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn-submit">Submit</button>
+            </form>
+            <span id="msg"></span>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>Created by <span>Eke Ugorji</span> | &copy; 2024 All rights reserved</p>
+      </div>
+    </div>
+
+
+
+    <script>
+
+      let tablinks = document.querySelectorAll('.tab-links');
+      let tabcontents = document.querySelectorAll('.tab-contents');
+
+      function openTab(tabName){
+        tabcontents.forEach(function(tabcontent){
+          tabcontent.classList.remove('active-tab');
+        });
+        tablinks.forEach(function(tablink){
+          tablink.classList.remove('active-link');
+        });
+
+        event.currentTarget.classList.add('active-link');
+        const tab = document.getElementById(tabName);
+        tab.classList.add('active-tab');
+      }
+    </script>
+
+    <script>
+      let sidemenu = document.getElementById('sidemenu');
+
+
+      function openmenu(){
+        sidemenu.style.right = '0';
+      }
+
+      function closemenu(){
+        sidemenu.style.right = '-200%';
+      }
+    </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzVXnkd7h66EzZX71rr_7k7_sv5My8zXZ6N7VjAodA_YyrVWKHaTlKufFwl8Y_96kNRwA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById('msg')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(() => {
+          msg.innerHTML = ""
+        }, 5000);
+        form.reset()})
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  </body>
+</html>
