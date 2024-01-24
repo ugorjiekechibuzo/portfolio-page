@@ -467,6 +467,7 @@ nav .fa-solid{
     transition: right 0.5s;  /*--to time delay the menu icon alittle--*/
   }
 
+
   nav ul li{
     display: block;
     margin: 25px;
@@ -505,6 +506,11 @@ nav .fa-solid{
   .copyright{
     font-size: 14px;
   }
+
+  .services-list div:hover{
+    background-color: #228b22;
+    transform: translateY(-20px);
+    }
 
 
 }
