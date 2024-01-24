@@ -507,10 +507,7 @@ nav .fa-solid{
     font-size: 14px;
   }
 
-  .services-list div:hover{
-    background-color: #228b22;
-    transform: translateY(-20px);
-    }
+  
 
 
 }
