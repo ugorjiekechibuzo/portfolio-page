@@ -17,9 +17,10 @@ body{
 #header{
   width: 100%;
   height: 100vh;
-  background-image: url(images/background.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(images/IMAGE\ 2.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .container{
@@ -33,9 +34,12 @@ nav{
   flex-wrap: wrap;
 }
 
-.logo{
-  width: 200px;
+nav img{
+  height: 100%;
+  width: 120px;
 }
+
+
 
 nav ul li{
   display: inline-block;
@@ -52,7 +56,7 @@ nav ul li a{
 
 }
 
-nav ul li a::after{
+nav ul li .sidebar::after{
   content: '';
   width: 0;
   height: 3px;
@@ -226,8 +230,6 @@ transform: translateY(-20px);
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
-
-
 }
 
 #work{
@@ -430,11 +432,13 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
   #header{
-  background-image: url(images/background.jpg);
+  background-image: url(images/IMAGE\ 2.png);
+  background-size: cover;
+  background-position: center;
   }
 
   .header-text{
-    margin-top: 40%;
+    margin-top: 65%;
   }
   .header-text h1{
     margin-top: 5%;
@@ -501,6 +505,8 @@ nav .fa-solid{
   .copyright{
     font-size: 14px;
   }
+
+
 }
 
 #msg {
